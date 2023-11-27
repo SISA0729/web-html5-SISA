@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de HTML5 SISA</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <div class="pricipal">
+        <header>
+            <nav>
+                <img class="inicio" src="../images/html.png" alt="logo">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">HTML5</a>
+                        <ul>
+                            <li><a href="../html/tablas.html">Tablas</a></li>
+                            <li><a href="../html/listas.html">Listas</a></li>
+                            <li><a href="../html/imagenes.html">Imagenes</a></li>
+                            <li><a href="../html/formato-de-texto.html">Formato de texto</a></li>
+                            <li><a href="../html/etiquetas-basicas.html">Etiquetas</a></li>
+                            <li><a href="../html/enlaces.html">Enlaces</a></li>
+                            <li><a href="../html/estilos.html">Estilos</a></li>
+                            <li><a href="../html/bloques.html">Bloques</a></li>
+                            <li><a href="../html/semanticas.html">Etiquetas-semanticas</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <article class="enlaces-principales">
+                    <div class="enlaces1">
+                        <h3>Enlaces</h3>
+                        Los enlaces, o hipervínculos, son elementos cruciales en el diseño web, permitiendo la
+                            interconexión entre diversas páginas y recursos. La etiqueta principal para crear enlaces en
+                            HTML es &lt;a&gt;. Un enlace se define mediante la sintaxis. <br>
+
+                            Aquí, el atributo href especifica la dirección a la que el enlace conducirá al usuario. Es
+                            importante destacar que los enlaces no están limitados al texto; pueden ser aplicados a
+                            imágenes u otros elementos HTML.
+                        
+                        <div class="youtube">
+                                <iframe src="https://www.youtube.com/embed/d7t6mbfCS9E?si=oUmrEPRcU8kHpj5b"></iframe>
+                        </div>
+                        <h4>HTML Enlaces - El Atributo Target</h4>
+
+                        El atributo target dentro de la etiqueta &lt;a&gt; controla cómo se abre el documento vinculado.
+                        Los valores comunes para target incluyen _self (abre en la misma ventana/tab), _blank (abre en
+                        una nueva ventana o pestaña), _parent (abre en el marco principal), y _top (abre en toda la
+                        ventana).
+                        
+                        
+
+                        <h4>URLs Absolutas vs. URLs Relativas</h4>
+
+                        Los enlaces pueden utilizar URLs absolutas (direcciones web completas, como
+                        "https://www.ejemplo.com") o URLs relativas (ubicación dentro del mismo sitio web, como
+                        "/pagina.html").
+
+                        
+                        
+                        <h4>HTML Enlaces - Enlazar a una Dirección de Correo Electrónico</h4>
+
+                        Para crear un enlace que abra el programa de correo electrónico del usuario, se utiliza mailto:
+                        en el atributo href.
+                    
+                    
+                        <h4>HTML Enlaces - Botón como Enlace</h4>
+
+                        La creación de un enlace con un botón HTML implica el uso de JavaScript para definir las
+                        acciones a realizar en eventos específicos, como un clic en el botón.
+                    
+                    
+                        <h4>HTML Enlaces - Títulos de Enlaces</h4>
+
+                        La inclusión del atributo title proporciona información adicional sobre el enlace, mostrándose
+                        generalmente como un texto emergente cuando el mouse se sitúa sobre él. Este atributo es útil
+                        para ofrecer descripciones contextuales adicionales.
+                    </div>
+
+                    <div class="enlaces2">
+                        <table class="tabla">
+                            <tr>
+                                <th>Atributo Target:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        &lt;a href="https://www.ejemplo.com" target="_blank"&gt;Abrir en nueva
+                                        ventana&lt;/a&gt;
+                                    </p>
+                                </td>
+                            </tr>
+                        </table> <br><br>
+                        <table class="tabla">
+                            <tr>
+                                <th>URLs Absolutas vs. URLs Relativas:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        &lt;a href="https://www.ejemplo.com/pagina.html"&gt;Enlace absoluto&lt;/a&gt;
+
+                                    </p>
+                                </td>
+                            </tr>
+                        </table> <br> <br>
+                        <table class="tabla">
+                            <tr>
+                                <td>
+                                    <p>
+                                        &lt;a href="/pagina.html"&gt;Enlace relativo&lt;/a&gt;
+                                    </p>
+                                </td>
+                            </tr>
+                        </table> <br> <br>
+                        <table class="tabla">
+                            <tr>
+                                <th>Enlazar a una Dirección de Correo Electrónico:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        &lt;a href="mailto:info@ejemplo.com"&gt;Enviar correo electrónico&lt;/a&gt;
+                                    </p>
+                                </td>
+                            </tr>
+                        </table> <br> <br>
+                        <table class="tabla">
+                            <tr>
+                                <th>Botón como Enlace (con JavaScript):</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        &lt;button id="miBoton"&gt;Haz clic&lt;/button&gt; <br>
+                                        &lt;script&gt; <br>
+                                        document.getElementById('miBoton').addEventListener('click', function() {
+                                        window.location.href = 'https://www.ejemplo.com'; <br>
+                                        }); <br>
+                                        &lt;/script&gt;
+
+                                    </p>
+                                </td>
+                            </tr>
+                        </table> <br> <br>
+                        <table class="tabla">
+                            <tr>
+                                <th>Títulos de Enlaces:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        &lt;a href="https://www.ejemplo.com" target="_blank" title="Visitar Ejemplo"&gt;Enlace con título&lt;/a&gt;
+                                    </p>
+                                </td>
+                            </tr>
+                        </table> <br> <br>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <br>
+
+        <footer>
+            <a href="../html/contacto.html" class="Contact">Contactanos ©</a>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

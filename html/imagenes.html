@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de HTML5 SISA</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <div class="pricipal">
+        <header>
+            <nav>
+                <img class="inicio" src="../images/html.png" alt="logo">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">HTML5</a>
+                        <ul>
+                            <li><a href="../html/tablas.html">Tablas</a></li>
+                            <li><a href="../html/listas.html">Listas</a></li>
+                            <li><a href="../html/imagenes.html">Imagenes</a></li>
+                            <li><a href="../html/formato-de-texto.html">Formato de texto</a></li>
+                            <li><a href="../html/etiquetas-basicas.html">Etiquetas</a></li>
+                            <li><a href="../html/enlaces.html">Enlaces</a></li>
+                            <li><a href="../html/estilos.html">Estilos</a></li>
+                            <li><a href="../html/bloques.html">Bloques</a></li>
+                            <li><a href="../html/semanticas.html">Etiquetas-semanticas</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="imagenes-principales">
+                <h3>Imagenes</h3>
+                <article class="imagenes1">
+
+
+                    <h2>HTML Images Syntax</h2>
+
+                    La etiqueta HTML &lt;img&gt; se utiliza para incrustar una imagen en una página web. Aunque
+                    técnicamente las imágenes no se insertan directamente en una página web, se enlazan a través de la
+                    etiqueta &lt;img&gt;, que crea un espacio reservado para la imagen referenciada.
+                    La etiqueta &lt;img&gt; está vacía, lo que significa que no tiene una etiqueta de cierre, y solo
+                    contiene
+                    atributos. Los dos atributos obligatorios son: <br>
+                    <ol>
+                        <li> <b>src:</b> Especifica la ruta o URL de la imagen.</li>
+                        <li><b>alt:</b> Proporciona un texto alternativo para la imagen, que se muestra si la imagen no
+                            puede cargarse o para usuarios con discapacidades visuales.</li>
+                    </ol>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="url" alt="alternatetext"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>The src Attribute</h2>
+                    El atributo "src" El atributo "src" necesario especifica la ruta (URL) de la imagen. Cuando una
+                    página web se carga, es el navegador en ese momento el que obtiene la imagen de un servidor web e la
+                    inserta en la página. Por lo tanto, asegúrate de que la imagen realmente permanezca en el mismo
+                    lugar con
+                    respecto a la página web, de lo contrario, tus visitantes verán un ícono de enlace roto. El ícono de
+                    enlace
+                    roto y el texto alternativo se mostrarán si el navegador no puede encontrar la imagen. <br>
+                    Es crucial asegurarse de que la ruta especificada en el atributo "src" sea correcta y que la imagen
+                    esté
+                    disponible en ese lugar cuando la página se carga. Si la imagen no se encuentra, el navegador
+                    mostrará un
+                    ícono de enlace roto, y es por eso que es importante proporcionar también un texto alternativo
+                    significativo a través del atributo "alt". Este texto alternativo se mostrará si la imagen no puede
+                    cargarse
+                    por alguna razón, mejorando así la accesibilidad de tu página web para usuarios con discapacidades
+                    visuales o en situaciones donde la imagen no está disponible. <br>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>The alt Attribute</h2>
+
+                    El atributo "alt" El atributo "alt" obligatorio proporciona un texto alternativo para una imagen, en
+                    caso de
+                    que el usuario, por alguna razón, no pueda verla (debido a una conexión lenta, un error en el
+                    atributo "src"
+                    o si el usuario utiliza un lector de pantalla). El valor del atributo "alt" debería describir la
+                    imagen: <br>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="img_chania.jpg" alt="Flores en Chania"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="nombreincorrecto.gif" alt="Flores en Chania"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    Es fundamental para los desarrolladores web crear sitios accesibles que sean compatibles con
+                    lectores de
+                    pantalla. Esto implica utilizar atributos como "alt" en las imágenes para proporcionar
+                    descripciones
+                    significativas, estructurar el contenido de manera semántica con etiquetas HTML apropiadas, y
+                    asegurarse
+                    de que la navegación y la interactividad sean compatibles con los métodos de entrada no
+                    visuales. Al
+                    hacerlo, se contribuye a garantizar que la web sea inclusiva y accesible para todos los
+                    usuarios.f
+
+
+                    <h2> Image Size - Width and Height</h2>
+                    Puedes utilizar el atributo "style" para especificar el ancho y la altura de una imagen. Este
+                    atributo se
+                    integra directamente en la etiqueta &lt;img&gt; y utiliza reglas de estilo en línea. Aquí tienes un
+                    ejemplo: <br>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="img_girl.jpg" alt="Chica con una chaqueta"
+                                    style="width:500px;height:600px;"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    Alternativamente, también puedes emplear los atributos "width" y "height" dentro de la etiqueta
+                    &lt;img&gt;. Aquí está el ejemplo:
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="img_girl.jpg" alt="Chica con una chaqueta" width="500" height="600"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    Ambas opciones te permiten controlar las dimensiones de la imagen en tu página web. Los valores
+                    de
+                    "width" y "height" se especifican en píxeles y determinan la anchura y la altura de la imagen,
+                    respectivamente.
+                    Es importante especificar el tamaño de la imagen, ya que esto evita que la página web parpadee
+                    mientras
+                    la imagen se carga. Si no se especifican dimensiones, el espacio reservado para la imagen se
+                    ajustará
+                    dinámicamente cuando la imagen se cargue, lo que puede causar un efecto de parpadeo incómodo
+                    para los
+                    usuarios.
+
+
+                    <h2>Width and Height, or Style?</h2>
+                    Los atributos de "width", "height" y "style" son todos válidos en HTML. Sin embargo, sugerimos el
+                    uso
+                    del atributo "style". Esto evita que las hojas de estilo cambien el tamaño de las imágenes.
+                    <ul>
+                        <li><b>Ancho y Altura:</b> Puedes especificar el tamaño de una imagen usando los atributos
+                            "width" y "height" dentro de la etiqueta &lt;img&gt;. Estos atributos aceptan valores en
+                            píxeles
+                            para
+                            determinar las dimensiones de la imagen. Por ejemplo:
+                        </li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+
+                                    &lt;!DOCTYPE html&gt; <br>
+                                    &lt;html&gt; <br>
+                                    &lt;head&gt; <br>
+                                    &lt;style&gt; <br>
+                                    img { <br>
+                                    width: 100%; <br>
+                                    } <br>
+                                    &lt;/style&gt; <br>
+                                    &lt;/head&gt; <br>
+                                    &lt;body&gt; <br>
+                                    &lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt; <br>
+                                    &lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt; <br>
+                                    &lt;/body&gt; <br>
+                                    &lt;/html&gt; <br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Images in Another Folder</h2>
+                    Si tus imágenes se encuentran en una subcarpeta, es necesario incluir el nombre de la carpeta en el
+                    atributo "src". Por ejemplo:
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="/images/html5.gif" alt="Ícono de HTML5"
+                                    style="width:128px;height:128px;"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    Imágenes en Otro Servidor/Sitio Web
+                    Algunos sitios web enlazan a imágenes en otro servidor. Para señalar a una imagen en otro
+                    servidor, debes
+                    especificar una URL absoluta (completa) en el atributo "src". Ejemplo:
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg"
+                                    alt="W3Schools.com"&gt;
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    Notas sobre imágenes externas:
+                    <ul>
+                        <li>Las imágenes externas pueden estar protegidas por derechos de autor. Si no obtienes permiso
+                            para usarlas, podrías infringir las leyes de copyright.</li>
+                        <li>Además, no tienes control sobre las imágenes externas; pueden ser eliminadas o modificadas
+                            en
+                            cualquier momento sin previo aviso.</li>
+                    </ul>
+
+                    
+                    <h2>Animated Images </h2>
+                    <ol>
+                        <li>
+                            <b>GIF Animadas: </b>El formato de archivo GIF (Graphics Interchange Format) es capaz de
+                            almacenar
+                            múltiples imágenes en un solo archivo, lo que permite la creación de imágenes animadas. Cada
+                            imagen en el GIF se muestra en secuencia, creando así una animación.
+                        </li>
+                        <li>
+                            <b>Atributo "alt":</b>El atributo "alt" proporciona un texto alternativo que se muestra si
+                            la imagen no
+                            puede cargarse. Es una buena práctica agregar una descripción significativa, especialmente
+                            en el
+                            caso de imágenes animadas donde la velocidad de carga puede ser un factor.
+                        </li>
+                        <li>
+                            <b>Estilo para Tamaño:</b>En este ejemplo, se utiliza el atributo "style" para establecer el
+                            ancho y la
+                            altura de la imagen animada en 48 píxeles cada uno. Esto ayuda a controlar el tamaño de la
+                            imagen
+                            en la página y asegurar una presentación visual coherente.
+                        </li>
+                        <li>
+                            <b>Consideraciones de Accesibilidad:</b> Accesibilidad: Al usar imágenes animadas, es
+                            esencial considerar la
+                            accesibilidad. Proporcionar un texto alternativo descriptivo mediante el atributo "alt"
+                            beneficia a
+                            usuarios con discapacidades visuales o a aquellos que optan por desactivar las animaciones
+                            en sus
+                            navegadores.
+                        </li>
+                    </ol>
+                </article>
+                <div class="imagenes2">
+                    <img src="https://disenowebakus.net/imagenes/articulos/insertar-imagenes-html.jpg" alt="img1"
+                        class="img1">
+
+                    <img src="../images/Img2.jpg" alt="img2" class="img1">
+                    <img src="../images/img3.png" alt="" class="img1">
+                    <img src="../images/img4.png" alt="img4" class="img1">
+                    <img src="../images/img5.png" alt="img5" class="img5">
+                    <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/02/hPanel-files-filemanager-public_html-upload-filehighlighted.webp"
+                        alt="img6" class="img1">
+                    <img src="https://media.emailonacid.com/wp-content/uploads/2019/05/EOA_BackgroundColorsImages2019_Blog.gif"
+                        alt="img7" class="img1">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="../html/contacto.html" class="Contact">Contactanos ©</a>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

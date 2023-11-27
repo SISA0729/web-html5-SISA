@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de HTML5 SISA</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <div class="pricipal">
+        <header>
+            <nav>
+                <img class="inicio" src="../images/html.png" alt="logo">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">HTML5</a>
+                        <ul>
+                            <li><a href="../html/tablas.html">Tablas</a></li>
+                            <li><a href="../html/listas.html">Listas</a></li>
+                            <li><a href="../html/imagenes.html">Imagenes</a></li>
+                            <li><a href="../html/formato-de-texto.html">Formato de texto</a></li>
+                            <li><a href="../html/etiquetas-basicas.html">Etiquetas</a></li>
+                            <li><a href="../html/enlaces.html">Enlaces</a></li>
+                            <li><a href="../html/estilos.html">Estilos</a></li>
+                            <li><a href="../html/bloques.html">Bloques</a></li>
+                            <li><a href="../html/semanticas.html">Etiquetas-semanticas</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section>
+                <article class="formato-principal">
+                    <div class="formatos1">
+                        
+                        <h3>Formato de Texto</h3>
+                        Las primeras etiquetas que veremos son las que se usaban en el pasado para dar formato al texto.
+                        Para ello tenemos una serie de etiquetas que escribimos en HTML envolviendo la palabra o el
+                        texto y que transforman ese texto en el formato que nosotros le hayamos querido dar. Algunas de
+                        estas etiquetas están no recomendadas (deprecated) por lo que no debemos emplearlas. Otras
+                        etiquetas han adquirido un nuevo significado en las últimas versiones de HTML, pero no vamos a
+                        entrar a definir este nuevo significado. Debido a su amplia difusión en el pasado conviene
+                        conocer los que fueron usos tradicionales de estas etiquetas, a medida que avances en el
+                        conocimiento de HTML podrás comprobar cómo para algunas etiquetas se consideran hoy día nuevos
+                        significados.
+                        
+                    </div>
+                    <div class="formatos2">
+                        <table class="FTO-formato1">
+                            <tr>
+                                <th>ETIQUETAS</th>
+                                <th>USO</th>
+                                <th>OBSERVACIONES</th>
+                            </tr>
+                            
+                            <tr>
+                                <td> &lt;b&gt;...&lt;/b&gt;</td>
+                                <td>Poner texto en negrita</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;strong&gt;...&lt;/strong&gt;</td>
+                                <td>Poner texto en negrita</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;i&gt;...&lt;/i&gt;</td>
+                                <td>Poner texto en cursiva</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;em&gt;...&lt;/em&gt;</td>
+                                <td>Poner texto en cursiva</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;u&gt;...&lt;/u&gt;</td>
+                                <td>Poner texto en subrayado</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;small&gt;...&lt;/small&gt;</td>
+                                <td>Poner texto mas pequeño</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;big&gt;...&lt;/big&gt;</td>
+                                <td>Poner texto mas grande</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;sub&gt;...&lt;/sub&gt;</td>
+                                <td>Poner texto subindice</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;sup&gt;...&lt;/sup&gt;</td>
+                                <td>Poner texto superindice</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;strike&gt;...&lt;/strike&gt;</td>
+                                <td>Poner texto como tachado</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;s&gt;...&lt;/s&gt;</td>
+                                <td>Poner texto como tachado</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                            <tr>
+                                <td> &lt;del&gt;...&lt;/del&gt;</td>
+                                <td>Poner texto como tachado</td>
+                                <td>Puede ser sustituido por CSS</td>
+                            </tr>
+                        </table>
+                        
+                            <h4>Texto en Negrita:</h4>
+                            &lt;b&gt;: Este elemento se utiliza para aplicar formato de negrita al texto. Es útil cuando se
+                            desea resaltar visualmente ciertas palabras o frases, pero no implica una importancia adicional
+                            para el contenido. <br>
+                            <b>Hola Mundo...</b>
+                            
+                            
+                            <h4>Texto Importante:</h4>
+    
+                            &lt;strong&gt;: A diferencia de &lt;b&gt;, &lt;strong&gt; no solo proporciona formato en negrita, sino
+                            que también indica que el texto es de importancia significativa en términos de estructura y
+                            contenido. Los navegadores suelen representar el texto dentro de &lt;strong&gt; en negrita. <br>
+                            <strong>Hola mundo...</strong>
+                            
+                                <h4>Texto en Cursiva:</h4>
+                                &lt;i&gt;: Este elemento se utiliza para aplicar formato en cursiva al texto. Es comúnmente utilizado para destacar palabras o frases en un tono diferente o para expresar un cambio en el estilo del texto. <br>
+                                <i>Hola mundo...</i>
+                            
+                                <h4>Texto Enfatizado:</h4>
+                                &lt;em&gt;: Aunque visualmente similar a &lt;i&gt;, &lt;em&gt; se utiliza para enfatizar el texto de manera semántica. Los lectores de pantalla pueden interpretar &lt;em&gt; pronunciando las palabras con un énfasis adicional, lo que ayuda a transmitir la intención del autor. <br>
+                                <em>Hola mundo...</em>
+                            
+                                <h4>Texto más Pequeño:</h4>
+                                &lt;small&gt;: Este elemento reduce el tamaño del texto, lo que puede ser útil para información menos relevante o notas aclaratorias que no deben destacarse visualmente. <br>
+                                <small>Hola mundo...</small>
+                        
+                            
+                    </div>
+                    <div class="formatos3">
+
+                            <h4>Texto Marcado:</h4>
+                            &lt;mark&gt;: Permite resaltar o marcar parte del texto, proporcionando una forma de señalar información importante. Es especialmente útil para resaltar términos clave dentro de un párrafo. <br>
+                            <mark>Hola mundo...</mark>
+                        
+                            <h4>Texto Eliminado:</h4>
+                            &lt;del&gt;: Indica que el texto contenido ha sido eliminado o tachado. Los navegadores suelen representar el texto dentro de &lt;del&gt; con una línea horizontal a través de él. 
+                            <br>
+                            <del>Hola mundo...</del>
+                        
+                            <h4>Texto Insertado:</h4>
+                            &lt;ins&gt;: Se utiliza para marcar el texto que ha sido insertado o agregado al documento. El texto insertado a menudo se subraya visualmente. <br>
+                            <ins>Hola mundo...</ins>
+                        
+                            <h4>Texto en Subíndice:</h4>
+                            &lt;sub&gt;: Coloca el texto en una posición de subíndice, útil para representar fórmulas químicas, expresiones matemáticas o cualquier contenido que deba aparecer ligeramente por debajo de la línea normal. <br>
+                            Hola<sub> mundo...</sub>
+                        
+                            <h4>Texto en Sobrescrito:</h4>
+                            &lt;sup&gt;: Eleva el texto a una posición de sobrescrito, adecuado para representar notas al pie, exponentes o cualquier contenido que deba aparecer ligeramente por encima de la línea normal. <br>
+                            Hola<sup> mundo...</sup>
+                        
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <a href="../html/contacto.html" class="Contact">Contactanos ©</a>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

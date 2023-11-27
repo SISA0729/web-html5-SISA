@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de HTML5 SISA</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <div class="pricipal">
+        <header>
+            <nav>
+                <img class="inicio" src="../images/html.png" alt="logo">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">HTML5</a>
+                        <ul>
+                            <li><a href="../html/tablas.html">Tablas</a></li>
+                            <li><a href="../html/listas.html">Listas</a></li>
+                            <li><a href="../html/imagenes.html">Imagenes</a></li>
+                            <li><a href="../html/formato-de-texto.html">Formato de texto</a></li>
+                            <li><a href="../html/etiquetas-basicas.html">Etiquetas</a></li>
+                            <li><a href="../html/enlaces.html">Enlaces</a></li>
+                            <li><a href="../html/estilos.html">Estilos</a></li>
+                            <li><a href="../html/bloques.html">Bloques</a></li>
+                            <li><a href="../html/semanticas.html">Etiquetas-semanticas</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <article class="etiqueta-principal">
+                    <div class="etiquetas1">
+                        <h3>Etiquetas basicas</h3>
+
+                        
+                            Este artículo proporciona una introducción a los conceptos básicos de HTML, el Lenguaje de
+                            Marcado de Hipertexto utilizado para estructurar y desplegar contenido en páginas web. A
+                            continuación, se resumen los puntos clave:
+                        
+                        <h4>1. Introducción a HTML</h4>
+                        HTML es un lenguaje de marcado, no de programación, utilizado para definir la estructura de
+                        contenido en una página web.
+                        Consiste en elementos que encierran partes del contenido, como párrafos, listas, imágenes y
+                        tablas.
+                        
+                        <h4>2. Anatomía de un Elemento HTML</h4>
+                        Etiqueta de apertura: Contiene el nombre del elemento y establece dónde comienza el efecto del
+                        elemento. <br> <br>
+
+
+                        <b>Etiqueta de cierre:</b> Similar a la etiqueta de apertura pero con una barra antes del
+                        nombre,
+                        indica dónde termina el elemento. <br>
+                        <b>Contenido:</b> El contenido del elemento, que puede ser texto, imágenes u otros elementos.
+                        <br>
+                        <b>Atributos:</b> Información adicional sobre el elemento, como el atributo "class" para aplicar
+                        estilos.
+                        
+                            Los atributos contienen información adicional acerca del elemento, la cual no quieres que
+                            aparezca en el contenido real del elemento. Aquí class es el nombre del atributo y
+                            editor-note
+                            el valor del atributo. En este caso, el atributo class permite darle al elemento un nombre
+                            identificativo, que se puede utilizar luego para apuntarle al elemento información de estilo
+                            y
+                            demás cosas.
+                        
+                        
+                        <h4>3. Anidamiento de Elementos</h4>
+
+                        Se pueden colocar elementos dentro de otros (anidamiento) para aplicar formato o resaltar partes
+                        del contenido. Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se
+                        encuentren
+                        claramente dentro o fuera el uno del otro. Si estos se encuentran solapados, el navegador web
+                        tratará de adivinar lo que intentas decirle, pero puede que obtengas resultados inesperados.
+                        
+                        <h4>4. Elementos Vacíos</h4>
+                        Algunos elementos, como img, no tienen contenido y se consideran elementos vacíos.
+                        
+
+                        <h4>5. Anatomía de un Documento HTML </h4>
+                        Un documento HTML completo incluye varios elementos combinados para formar la página.
+                        Ejemplo de código HTML básico con elementos como &lt;!DOCTYPE html&gt;, &lt;html&gt;,
+                        &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;, y &lt;body&gt;.
+                        
+                        <h4>6. Etiquetas Específicas</h4>
+                        &lt;head&gt;: Contiene información no visible para los visitantes, como palabras clave,
+                        descripciones y metadatos.
+                        &lt;meta charset="utf-8"&gt;: Establece el juego de caracteres del documento en utf-8.
+                        &lt;title&gt;: Define el título de la página, visible en la pestaña del navegador.
+                        
+                        <h4>7. Consejos y Errores Comunes</h4>
+                        Atributos deben tener un espacio antes del nombre, seguido de un igual y comillas para el valor.
+                        Anidar elementos correctamente para evitar errores en la interpretación del navegador.
+                        
+
+                    </div>
+                    <div class="etiquetas2">
+                        <a href="../images/etiquetas2.jpg"><img src="../images/etiquetas2.jpg" alt="etiquetas-basicas"
+                                class="FTO-etiquetas1"></a>
+                        <a href="../images/etiquetas-basicas.png"><img src="../images/etiquetas-basicas.png"
+                                alt="etiquetas-basicas" class="FTO-etiquetas2"></a>
+
+                    </div>
+                    <div class="etiquetas3">
+                        <a href="../images/31b2c9069eb9c40b47308599fb3bebd2.jpg"><img
+                                src="../images/31b2c9069eb9c40b47308599fb3bebd2.jpg" alt="etiquetas-basicas"
+                                class="FTO-etiquetas3"></a>
+
+                        <div class="etiquetas4">
+
+                            <h4>Encabezados</h4>
+
+                            Los elementos de encabezado permiten especificar que ciertas partes del contenido son
+                            encabezados, o subencabezados del contenido. De la misma forma que un libro tiene un título
+                            principal, y que a su vez puede tener títulos por cada capítulo individual, y subtítulos
+                            dentro de ellos, un documento HTML puede tenerlos también. HTML posee seis niveles de
+                            encabezados,
+                            &lt;h1&gt; (en-US)–&lt;h6&gt; (en-US), aunque probablemente solo llegues a usar 3-4 como mucho:
+
+                            <h4>Parrafos</h4>
+                            los elementos &lt;p&gt; se utilizan para encerrar párrafos de texto; los usarás frecuentemente
+                            para el marcado de contenido de texto regular
+
+                            <h4>Listas</h4>
+                            Mucho del contenido web está dado por listas, así que HTML tiene elementos especiales
+                            para ellas. El marcado de listas se realiza siempre en al menos dos elementos. Los dos
+                            tipos de listas más comunes son las listas ordenadas y las desordenadas: <br>
+
+                            <b>Las listas desordenadas</b> son aquellas en las que el orden de los items no es
+                            relevante,
+                            como en una lista de compras. Estas son encerradas en un elemento
+                            &lt;ul&gt;. <br>
+                            <b>Las listas ordenadas</b> son aquellas en las que el orden sí es relevante, como en una
+                            receta. Estas son encerradas en un elemento &lt;ol&gt; (ordered list).
+
+                            <h4>Viculos</h4>
+                            
+                            Los vínculos o enlaces son muy importantes —son los que hacen de la web, la web—. Para
+                            implementar un vínculo, necesitas usar un vínculo simple — &lt;a&gt; — la a es la abreviatura de
+                            la palabra inglesa «anchor» («ancla»).
+
+                        </div>
+                    </div>
+                </article>
+
+
+            </section>
+        </main>
+
+        <footer>
+            <a href="../html/contacto.html" class="Contact">Contactanos ©</a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
